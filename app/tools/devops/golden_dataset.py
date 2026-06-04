@@ -26,12 +26,19 @@ class GoldenDatasetTool(BaseTool):
     def _run(self, collection_name: str = "default", api_base_url: str = "http://localhost:8000") -> str:
         from app.config import settings
 
-        # Load golden dataset
-        try:
-            with open("/app/tests/fixtures/queries.json") as f:
-                cases = json.load(f)
-        except FileNotFoundError:
-            return json.dumps({"error": "queries.json not found at tests/fixtures/queries.json"})
+        # Load golden dataset — prefer the full CI/CD dataset, fall back to simple queries
+        for path in [
+            "/app/tests/fixtures/golden_dataset_cicdct.json",
+            "/app/tests/fixtures/queries.json",
+        ]:
+            try:
+                with open(path) as f:
+                    cases = json.load(f)
+                break
+            except FileNotFoundError:
+                continue
+        else:
+            return json.dumps({"error": "No golden dataset file found in tests/fixtures/"})
 
         results = []
         passed = 0

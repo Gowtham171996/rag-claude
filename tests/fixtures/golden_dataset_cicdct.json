@@ -1,0 +1,242 @@
+[
+  {
+    "id": "GD-001",
+    "category": "professional_summary",
+    "difficulty": "easy",
+    "question": "How many years of experience does Gowtham have?",
+    "ground_truth": "Gowtham has 8 years of expertise.",
+    "expected_keywords": ["8 years"]
+  },
+  {
+    "id": "GD-002",
+    "category": "professional_summary",
+    "difficulty": "easy",
+    "question": "What is Gowtham's current job title?",
+    "ground_truth": "Senior Artificial Intelligence Engineer (LLM, ML) at Solventum OPC private limited.",
+    "expected_keywords": ["Senior", "AI", "engineer"]
+  },
+  {
+    "id": "GD-003",
+    "category": "professional_summary",
+    "difficulty": "medium",
+    "question": "What AI frameworks does Gowtham specialise in?",
+    "ground_truth": "Gowtham specialises in LangChain, LlamaIndex, Ollama, PyTorch, TensorFlow, Huggingface.",
+    "expected_keywords": ["LangChain", "Ollama", "Pytorch"]
+  },
+  {
+    "id": "GD-004",
+    "category": "professional_summary",
+    "difficulty": "medium",
+    "question": "What deep learning architectures does Gowtham have experience with?",
+    "ground_truth": "BERT, Gemma, GPT4, Llama, Claude, sLLM.",
+    "expected_keywords": ["BERT", "GPT4", "Llama"]
+  },
+  {
+    "id": "GD-005",
+    "category": "experience_solventum",
+    "difficulty": "easy",
+    "question": "Where does Gowtham currently work and since when?",
+    "ground_truth": "Gowtham works at Solventum OPC private limited in Berlin, Germany since August 2024.",
+    "expected_keywords": ["Solventum", "Berlin", "August 2024"]
+  },
+  {
+    "id": "GD-006",
+    "category": "experience_solventum",
+    "difficulty": "medium",
+    "question": "What P95 latency did Gowtham achieve in his LLM microservices solution?",
+    "ground_truth": "He achieved a P95 latency of less than 200ms.",
+    "expected_keywords": ["200ms", "P95"]
+  },
+  {
+    "id": "GD-007",
+    "category": "experience_solventum",
+    "difficulty": "medium",
+    "question": "What tools did Gowtham use for monitoring and vector storage at Solventum?",
+    "ground_truth": "Langfuse for monitoring and Qdrant for vector storage, along with MCP server.",
+    "expected_keywords": ["Langfuse", "Qdrant", "MCP"]
+  },
+  {
+    "id": "GD-008",
+    "category": "experience_solventum",
+    "difficulty": "hard",
+    "question": "By how much did Gowtham improve time-to-deployment at Solventum and how?",
+    "ground_truth": "He improved time-to-deployment by 40% using automated CI/CD pipelines with Azure DevOps and RAGAS to quantify faithfulness and answer relevancy.",
+    "expected_keywords": ["40%", "CI/CD", "RAGAS", "faithfulness"]
+  },
+  {
+    "id": "GD-009",
+    "category": "experience_solventum",
+    "difficulty": "hard",
+    "question": "What fine-tuning techniques did Gowtham use for LLM models?",
+    "ground_truth": "He used Quantization GGUF and LoRA for fine-tuning.",
+    "expected_keywords": ["GGUF", "LoRA"]
+  },
+  {
+    "id": "GD-010",
+    "category": "experience_iisys",
+    "difficulty": "easy",
+    "question": "Where did Gowtham work before Solventum?",
+    "ground_truth": "He worked at IISYS Institute in Hof, Bayern, Germany as a Mid Senior Research AI Engineer.",
+    "expected_keywords": ["IISYS", "Hof", "Bayern"]
+  },
+  {
+    "id": "GD-011",
+    "category": "experience_iisys",
+    "difficulty": "medium",
+    "question": "How many text and image categories did Gowtham work with at IISYS?",
+    "ground_truth": "He worked with 2100+ text and image categories for automobile products.",
+    "expected_keywords": ["2100"]
+  },
+  {
+    "id": "GD-012",
+    "category": "experience_iisys",
+    "difficulty": "medium",
+    "question": "What monitoring tools did Gowtham use at IISYS Institute?",
+    "ground_truth": "He used Grafana and Prometheus for monitoring.",
+    "expected_keywords": ["Grafana", "Prometheus"]
+  },
+  {
+    "id": "GD-013",
+    "category": "experience_iisys",
+    "difficulty": "medium",
+    "question": "What prompt engineering techniques did Gowtham implement at IISYS?",
+    "ground_truth": "He implemented zero-shot, few-shot, and chain-of-thoughts prompt engineering.",
+    "expected_keywords": ["zero-shot", "few-shot", "chain-of-thoughts"]
+  },
+  {
+    "id": "GD-014",
+    "category": "experience_cgi",
+    "difficulty": "easy",
+    "question": "What was Gowtham's role at CGI and Mindtree?",
+    "ground_truth": "Senior Data Science & Machine Learning Engineer (Senior Software Engineer) at CGI & Mindtree in Bengaluru, India from July 2017 to February 2020.",
+    "expected_keywords": ["CGI", "Mindtree", "Bengaluru"]
+  },
+  {
+    "id": "GD-015",
+    "category": "experience_cgi",
+    "difficulty": "hard",
+    "question": "What visualization tools did Gowtham use at CGI for data analysis?",
+    "ground_truth": "He used Power BI and Tableau for data science analysis and visualization.",
+    "expected_keywords": ["Power BI", "Tableau"]
+  },
+  {
+    "id": "GD-016",
+    "category": "education",
+    "difficulty": "easy",
+    "question": "What is Gowtham's highest educational qualification?",
+    "ground_truth": "M.Sc. Master's in Applied Research in Computer Science from Hochschule Hof, Germany, graduated September 2021.",
+    "expected_keywords": ["M.Sc", "Computer Science", "Hochschule Hof"]
+  },
+  {
+    "id": "GD-017",
+    "category": "education",
+    "difficulty": "medium",
+    "question": "What was Gowtham's Master's thesis topic?",
+    "ground_truth": "Qualitative Analysis of 3D reconstruction of objects using sensor fusion of RGB and Depth lidars.",
+    "expected_keywords": ["3D reconstruction", "sensor fusion", "lidar"]
+  },
+  {
+    "id": "GD-018",
+    "category": "education",
+    "difficulty": "easy",
+    "question": "Where did Gowtham complete his Bachelor's degree?",
+    "ground_truth": "B.E. in Computer Science & Engineering from Visvesvaraya Technical University, Bengaluru, India, graduated July 2017.",
+    "expected_keywords": ["Visvesvaraya", "Bengaluru", "2017"]
+  },
+  {
+    "id": "GD-019",
+    "category": "skills",
+    "difficulty": "easy",
+    "question": "What programming languages does Gowtham know?",
+    "ground_truth": "Python, Bash, MongoDB, SQL, C++, Power BI, Tableau, Data lakes.",
+    "expected_keywords": ["Python", "SQL", "C++"]
+  },
+  {
+    "id": "GD-020",
+    "category": "skills",
+    "difficulty": "medium",
+    "question": "What cloud and deployment platforms is Gowtham proficient in?",
+    "ground_truth": "Docker, Kubernetes, AWS, GCP, Azure DevOps, Jenkins, Terraform.",
+    "expected_keywords": ["Docker", "Kubernetes", "AWS", "Terraform"]
+  },
+  {
+    "id": "GD-021",
+    "category": "skills",
+    "difficulty": "medium",
+    "question": "What LLM models does Gowtham have experience with?",
+    "ground_truth": "Transformers, LLaMa 3, BERT, GPT3, GPT4, Mistral, Langchain, Gemini.",
+    "expected_keywords": ["LLaMa", "GPT4", "Mistral", "Gemini"]
+  },
+  {
+    "id": "GD-022",
+    "category": "skills",
+    "difficulty": "easy",
+    "question": "What are Gowtham's language proficiency levels?",
+    "ground_truth": "German at B2 level and English at C1 level.",
+    "expected_keywords": ["German", "B2", "English", "C1"]
+  },
+  {
+    "id": "GD-023",
+    "category": "publications",
+    "difficulty": "medium",
+    "question": "How many research papers has Gowtham published?",
+    "ground_truth": "Gowtham has published three research papers in the International Journal of Scientific and Research Publications (IJSRP).",
+    "expected_keywords": ["three", "IJSRP"]
+  },
+  {
+    "id": "GD-024",
+    "category": "publications",
+    "difficulty": "hard",
+    "question": "What was Gowtham's first research paper about?",
+    "ground_truth": "I3 Bot: Empowering Small and Medium Scale Enterprises with Machine Learning, published in IJSRP in 2019.",
+    "expected_keywords": ["I3 Bot", "2019", "Machine Learning"]
+  },
+  {
+    "id": "GD-025",
+    "category": "publications",
+    "difficulty": "hard",
+    "question": "What is Gowtham's research paper on 3D human pose estimation about?",
+    "ground_truth": "3D Human Pose Estimation Avatar Control in Virtual Reality, published in IJSRP in 2021.",
+    "expected_keywords": ["3D Human Pose", "Virtual Reality", "2021"]
+  },
+  {
+    "id": "GD-026",
+    "category": "certifications",
+    "difficulty": "easy",
+    "question": "What certifications does Gowtham hold?",
+    "ground_truth": "Microsoft Certified Azure AI Fundamentals, Professional Scrum Product Owner 1, ISO/IEC 27001:2022 Information Security, and EU GDPR.",
+    "expected_keywords": ["Azure AI", "Scrum", "GDPR"]
+  },
+  {
+    "id": "GD-027",
+    "category": "certifications",
+    "difficulty": "medium",
+    "question": "Which data security standard is Gowtham certified in?",
+    "ground_truth": "ISO/IEC 27001:2022 Information Security Management System.",
+    "expected_keywords": ["ISO", "27001", "Information Security"]
+  },
+  {
+    "id": "GD-028",
+    "category": "personal_info",
+    "difficulty": "easy",
+    "question": "Where is Gowtham currently based?",
+    "ground_truth": "Berlin, Germany (Wilhelmshavener Strasse, 10552 Berlin).",
+    "expected_keywords": ["Berlin"]
+  },
+  {
+    "id": "GD-029",
+    "category": "personal_info",
+    "difficulty": "easy",
+    "question": "What is Gowtham's visa status in Germany?",
+    "ground_truth": "Permanent Resident.",
+    "expected_keywords": ["Permanent Resident"]
+  },
+  {
+    "id": "GD-030",
+    "category": "personal_info",
+    "difficulty": "medium",
+    "question": "What is Gowtham's notice period for starting a new job?",
+    "ground_truth": "2 weeks notice.",
+    "expected_keywords": ["2 Week"]
+  }
+]
