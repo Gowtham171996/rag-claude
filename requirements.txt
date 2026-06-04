@@ -1,0 +1,16 @@
+fastapi>=0.111
+ollama>=0.3
+uvicorn[standard]>=0.30
+crewai>=0.51
+pydantic-settings>=2.0
+python-multipart
+python-dotenv
+# Vector DB
+qdrant-client>=1.9
+# LLM
+anthropic>=0.28
+# Document parsing
+pypdf>=4.0
+python-docx>=1.1
+# Tokenization
+tiktoken>=0.7

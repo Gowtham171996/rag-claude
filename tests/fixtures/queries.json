@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What was TechCorp's total revenue in 2025?",
+    "expected_keywords": ["4.2 billion", "revenue", "2025"]
+  },
+  {
+    "question": "Which product had the fastest ramp in company history?",
+    "expected_keywords": ["SecureEdge", "180 million", "six months"]
+  },
+  {
+    "question": "What is the revenue guidance for 2026?",
+    "expected_keywords": ["4.7 billion", "4.9 billion", "2026"]
+  }
+]
