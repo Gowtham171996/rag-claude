@@ -67,14 +67,16 @@ def search(
         ]
         qdrant_filter = Filter(must=conditions)
 
-    return client.search(
+    # qdrant-client >= 1.7 replaced .search() with .query_points()
+    # .query_points() returns a QueryResponse; .points is the list of ScoredPoint
+    return client.query_points(
         collection_name=collection,
-        query_vector=query_vector,
+        query=query_vector,
         limit=top_k,
         query_filter=qdrant_filter,
         with_payload=True,
         score_threshold=score_threshold,
-    )
+    ).points
 
 
 def delete_by_document_id(collection: str, document_id: str) -> None:
