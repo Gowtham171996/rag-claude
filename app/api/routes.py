@@ -87,7 +87,7 @@ async def query(body: QueryRequest):
     return QueryResponse(
         answer=result["answer"],
         sources=result["sources"],
-        model_used=settings.llm_model,
+        model_used=settings.ollama_model,
         latency_ms=latency_ms,
     )
 

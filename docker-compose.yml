@@ -23,10 +23,10 @@ services:
               capabilities: [gpu]
     healthcheck:
       test: ["CMD-SHELL", "curl -sf http://localhost:11434/api/tags | grep -q 'qwen3.5' && curl -sf http://localhost:11434/api/tags | grep -q 'qwen3-embedding'"]
-      interval: 20s
+      interval: 10s
       timeout: 10s
-      retries: 20
-      start_period: 60s
+      retries: 30
+      start_period: 30s   # models cached in volume — pull is near-instant on restart
     networks:
       - rag-network
 
