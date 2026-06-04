@@ -68,6 +68,23 @@ services:
     networks:
       - rag-network
 
+  # ── Streamlit Chat UI ──────────────────────────────────────────────────────
+  chat-ui:
+    build: ./ui
+    container_name: rag-chat-ui
+    ports:
+      - "3000:8501"
+    environment:
+      API_URL: http://api:8000
+      API_KEY: ${API_KEY:-my-secret-key-123}
+      COLLECTION_NAME: default
+    depends_on:
+      api:
+        condition: service_started
+    restart: unless-stopped
+    networks:
+      - rag-network
+
 volumes:
   ollama_data:
   qdrant_data:

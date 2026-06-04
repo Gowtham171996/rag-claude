@@ -1,13 +1,34 @@
-name: Tests
+name: CI — Lint + Test
 
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [master, main]
 
 jobs:
+  # ── Job 1: Lint (fast gate — runs before tests) ──────────────────────────────
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ruff
+        run: pip install ruff>=0.4
+
+      - name: Ruff lint
+        run: ruff check .
+
+      - name: Ruff format check
+        run: ruff format --check .
+
+  # ── Job 2: Unit + Integration tests ──────────────────────────────────────────
   test:
     runs-on: ubuntu-latest
+    needs: lint          # only runs if lint passes
     steps:
       - uses: actions/checkout@v4
 
@@ -19,11 +40,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements-dev.txt
 
-      - name: Run tests
-        run: pytest tests/ -v --tb=short --cov=app --cov-report=xml
+      - name: Run unit tests
+        run: pytest tests/unit/ -v --tb=short --cov=app --cov-report=xml
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_TEST }}
-          VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY_TEST }}
           API_KEY: test-ci-key
 
       - name: Upload coverage
