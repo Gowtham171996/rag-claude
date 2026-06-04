@@ -57,7 +57,7 @@ def search(
     query_vector: list[float],
     top_k: int,
     filters: dict,
-    score_threshold: float = 0.5,
+    score_threshold: float = 0.0,   # set per-call; 0.0 returns all top_k results unfiltered
 ):
     client = get_client()
     qdrant_filter: Optional[Filter] = None

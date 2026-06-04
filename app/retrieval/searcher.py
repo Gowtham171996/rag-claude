@@ -8,7 +8,7 @@ def retrieve(
     collection_name: str,
     top_k: int,
     filters: dict,
-    score_threshold: float = 0.5,
+    score_threshold: float = 0.0,   # qwen3-embedding scores are lower than OpenAI — let top_k handle cutoff
 ) -> list[SourceChunk]:
     query_vector = embed_query(question)
     hits = db.search(
